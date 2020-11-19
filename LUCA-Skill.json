@@ -1,89 +1,43 @@
 {
-  "name": "Experiencias-001",
   "intents": [
-    {
-      "intent": "si",
-      "examples": [
-        {
-          "text": "si"
-        },
-        {
-          "text": "claro"
-        },
-        {
-          "text": "sipi"
-        },
-        {
-          "text": "okay"
-        },
-        {
-          "text": "perfecto"
-        },
-        {
-          "text": "correcto"
-        },
-        {
-          "text": "esta bien"
-        },
-        {
-          "text": "ok"
-        },
-        {
-          "text": "si, por favor"
-        },
-        {
-          "text": "por favor"
-        },
-        {
-          "text": "eso"
-        },
-        {
-          "text": "si quiero"
-        },
-        {
-          "text": "seguro"
-        }
-      ],
-      "description": "Respuesta afirmativa"
-    },
     {
       "intent": "cancelar",
       "examples": [
         {
-          "text": "no me interesa"
+          "text": "cambie de opinion"
         },
         {
           "text": "cancelar"
+        },
+        {
+          "text": "chao"
+        },
+        {
+          "text": "no me interesa"
+        },
+        {
+          "text": "olvidalo"
+        },
+        {
+          "text": "parar"
+        },
+        {
+          "text": "parar la busqueda"
+        },
+        {
+          "text": "para todo"
+        },
+        {
+          "text": "para ya"
+        },
+        {
+          "text": "putas"
         },
         {
           "text": "quiero parar"
         },
         {
           "text": "salir"
-        },
-        {
-          "text": "chao"
-        },
-        {
-          "text": "para ya"
-        },
-        {
-          "text": "parar"
-        },
-        {
-          "text": "olvidalo"
-        },
-        {
-          "text": "para la busqueda"
-        },
-        {
-          "text": "para todo"
-        },
-        {
-          "text": "cambie de opinion"
-        },
-        {
-          "text": "putas"
         }
       ],
       "description": "Cancela y detiene cualquier proceso"
@@ -92,16 +46,16 @@
       "intent": "no",
       "examples": [
         {
-          "text": "mal"
-        },
-        {
-          "text": "negativo"
-        },
-        {
           "text": "claro que no"
         },
         {
-          "text": "nopo"
+          "text": "de donde sacaste eso?"
+        },
+        {
+          "text": "error"
+        },
+        {
+          "text": "eso no"
         },
         {
           "text": "eso no era"
@@ -110,10 +64,10 @@
           "text": "esta mal"
         },
         {
-          "text": "error"
+          "text": "mal"
         },
         {
-          "text": "de donde sacaste eso?"
+          "text": "negativo"
         },
         {
           "text": "no"
@@ -122,17 +76,62 @@
           "text": "no, gracias"
         },
         {
-          "text": "eso no"
+          "text": "no, no quiero"
         },
         {
-          "text": "no, no quiero"
+          "text": "nopo"
         }
       ],
       "description": "Respuesta negativa"
     },
     {
+      "intent": "si",
+      "examples": [
+        {
+          "text": "correcto"
+        },
+        {
+          "text": "eso"
+        },
+        {
+          "text": "esta bien"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "okay"
+        },
+        {
+          "text": "perfecto"
+        },
+        {
+          "text": "por favor"
+        },
+        {
+          "text": "seguro"
+        },
+        {
+          "text": "si"
+        },
+        {
+          "text": "sipi"
+        },
+        {
+          "text": "si, por favor"
+        },
+        {
+          "text": "si quiero"
+        }
+      ],
+      "description": "Respuesta afirmativa"
+    },
+    {
       "intent": "ubicacion",
       "examples": [
+        {
+          "text": "a donde me dirijo a comprar?"
+        },
         {
           "text": "donde estan ubicados?"
         },
@@ -141,9 +140,6 @@
         },
         {
           "text": "tienen oficinas?"
-        },
-        {
-          "text": "a donde me dirijo a comprar?"
         }
       ],
       "description": "Ubicación de la agencia de viajes"
@@ -152,61 +148,61 @@
       "intent": "viaje",
       "examples": [
         {
-          "text": "desde cartagena"
+          "text": "5"
         },
         {
-          "text": "quiero viajar @ciudad_destino @ciudad_origen"
+          "text": "cuanto @ciudad_destino @ciudad_origen?"
+        },
+        {
+          "text": "cuanto @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "cuanto cuesta?"
+        },
+        {
+          "text": "cuanto cuesta @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "cuanto cuesta @ciudad_origen @ciudad_destino para mañana?"
+        },
+        {
+          "text": "cuanto cuesta viajar @ciudad_destino?"
+        },
+        {
+          "text": "cuanto vale @ciudad_destino el @sys-date?"
+        },
+        {
+          "text": "cuanto vale @ciudad_origen @ciudad_destino?"
         },
         {
           "text": "cuanto vale el viaje @ciudad_destino?"
+        },
+        {
+          "text": "de @ciudad_origen a @ciudad_destino?"
+        },
+        {
+          "text": "desde cartagena"
+        },
+        {
+          "text": "precio @ciudad_destino viajando el @sys-date?"
+        },
+        {
+          "text": "precio @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "quiero salir el lunes y regresar viernes"
+        },
+        {
+          "text": "quiero viajar"
+        },
+        {
+          "text": "quiero viajar @ciudad_destino @ciudad_origen"
         },
         {
           "text": "quiero viajar @ciudad_origen @ciudad_destino"
         },
         {
           "text": "tienen pasajes @ciudad_origen-@ciudad_destino-@ciudad_origen?"
-        },
-        {
-          "text": "cuanto cuesta @ciudad_origen @ciudad_destino para mañana?"
-        },
-        {
-          "text": "cuanto cuesta @ciudad_origen @ciudad_destino?"
-        },
-        {
-          "text": "cuanto @ciudad_origen @ciudad_destino?"
-        },
-        {
-          "text": "de @ciudad_origen a @ciudad_destino?"
-        },
-        {
-          "text": "precio @ciudad_origen @ciudad_destino?"
-        },
-        {
-          "text": "cuanto vale @ciudad_origen @ciudad_destino?"
-        },
-        {
-          "text": "cuanto cuesta viajar @ciudad_destino?"
-        },
-        {
-          "text": "cuanto @ciudad_destino @ciudad_origen?"
-        },
-        {
-          "text": "cuanto vale @ciudad_destino el @sys-date?"
-        },
-        {
-          "text": "precio @ciudad_destino viajando el @sys-date?"
-        },
-        {
-          "text": "quiero viajar"
-        },
-        {
-          "text": "cuanto cuesta?"
-        },
-        {
-          "text": "quiero salir el lunes y regresar viernes"
-        },
-        {
-          "text": "5"
         }
       ],
       "description": "Define el origen, el destino y las fechas para viajar"
@@ -214,241 +210,372 @@
   ],
   "entities": [
     {
-      "entity": "sys-time",
-      "values": []
-    },
-    {
-      "entity": "fecha_vuelta",
+      "entity": "ciudad_destino",
       "values": [
         {
           "type": "synonyms",
-          "value": "22/02",
+          "value": "bogota1",
           "synonyms": [
-            "22 febrero",
-            "22 de febrero",
-            "22-02",
-            "@sys-date"
+            "a bogota",
+            "al dorado",
+            "destino bogota",
+            "hacia bogota",
+            "hacia el dorado",
+            "hasta bogota",
+            "para bogota",
+            "para el dorado"
           ]
         },
         {
           "type": "synonyms",
-          "value": "22 febrero",
+          "value": "cartagena1",
           "synonyms": [
-            "22 de febrero",
-            "22-02",
-            "22/02",
-            "@sys-date"
+            "a cartagena",
+            "destino cartagena",
+            "hacia cartagena",
+            "hasta cartagena",
+            "para cartagena"
           ]
         },
         {
           "type": "synonyms",
-          "value": "22 de febrero",
+          "value": "to_barranquilla",
           "synonyms": [
-            "22 febrero",
-            "22-02",
-            "22/02",
-            "@sys-date"
+            "a barranquilla",
+            "destino barranquilla",
+            "hacia barranquilla",
+            "hasta barranquilla",
+            "para barranquilla"
           ]
         },
         {
           "type": "synonyms",
-          "value": "@sys-date",
+          "value": "to_bucaramanga",
           "synonyms": [
-            "22 febrero",
-            "22-02",
-            "22/02",
-            "22 de febrero",
-            "@sys-date"
+            "a bucaramanga",
+            "destino bucaramanga",
+            "hacia bucaramanga",
+            "hasta bucaramanga",
+            "para bucaramanga"
           ]
         },
         {
           "type": "synonyms",
-          "value": "22-02",
+          "value": "to_cali",
           "synonyms": [
-            "22 febrero",
-            "22 de febrero",
-            "22/02",
-            "@sys-date"
+            "a cali",
+            "destino cali",
+            "hacia cali",
+            "hasta cali",
+            "para cali"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_cucuta",
+          "synonyms": [
+            "a cucuta",
+            "destino cucuta",
+            "hacia cucuta",
+            "hasta cucuta",
+            "para cucuta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_leticia",
+          "synonyms": [
+            "a leticia",
+            "destino leticia",
+            "hacia leticia",
+            "hasta leticia",
+            "para leticia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_medellin",
+          "synonyms": [
+            "al jose maria cordova",
+            "a medellin",
+            "a rionegro",
+            "destino jose maria cordova",
+            "destino medellin",
+            "hacia medellin",
+            "hacia rionegro",
+            "hasta jose maria cordova",
+            "hasta medellin",
+            "para jose maria cordova",
+            "para medellin",
+            "para rionegro"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_monteria",
+          "synonyms": [
+            "a monteria",
+            "destino monteria",
+            "hacia monteria",
+            "hasta monteria",
+            "para monteria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_pereira",
+          "synonyms": [
+            "a pereira",
+            "destino pereira",
+            "hacia pereira",
+            "hasta pereira",
+            "para pereira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_riohacha",
+          "synonyms": [
+            "a riohacha",
+            "destino riohacha",
+            "hacia riohacha",
+            "hasta riohacha",
+            "para riohacha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_san andres",
+          "synonyms": [
+            "a san andres",
+            "destino san andres",
+            "hacia san andres",
+            "hasta san andres",
+            "para san andres"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_santa marta",
+          "synonyms": [
+            "a santa marta",
+            "destino santa marta",
+            "hacia santa marta",
+            "hasta santa marta",
+            "para santa marta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_valledupar",
+          "synonyms": [
+            "a valledupar",
+            "destino valledupar",
+            "hacia valledupar",
+            "hasta valledupar",
+            "para valledupar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_yopal",
+          "synonyms": [
+            "a yopal",
+            "destino yopal",
+            "hacia yopal",
+            "hasta yopal",
+            "para yopal"
           ]
         }
       ]
     },
     {
-      "entity": "ciudad_destino",
+      "entity": "ciudad_origen",
       "values": [
         {
           "type": "synonyms",
-          "value": "1Pereira-PEI",
+          "value": "bogota2",
           "synonyms": [
-            "hacia pereira",
-            "para pereira",
-            "a pereira",
-            "hasta pereira",
-            "destino pereira"
+            "bogota",
+            "de bogota",
+            "desde bogota",
+            "origen bogota",
+            "saliendo de bogota",
+            "saliendo desde bogota"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Cúcuta-CUC",
+          "value": "cartagena2",
           "synonyms": [
-            "hacia cucuta",
-            "para cucuta",
-            "a cucuta",
-            "hasta cucuta",
-            "destino cucuta"
+            "cartagena",
+            "de cartagena",
+            "desde cartagena",
+            "origen cartagena",
+            "saliendo de cartagena",
+            "saliendo desde cartagena"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Bogotá-BOG",
+          "value": "from_barranquilla",
           "synonyms": [
-            "hacia el dorado",
-            "para el dorado",
-            "al dorado",
-            "hacia bogota",
-            "para bogota",
-            "a bogota",
-            "hasta bogota",
-            "destino bogota"
+            "barranquilla",
+            "de barranquilla",
+            "desde barranquilla",
+            "origen barranquilla",
+            "saliendo de barranquilla",
+            "saliendo desde barranquilla"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Cartagena-CTG",
+          "value": "from_bucaramanga",
           "synonyms": [
-            "hacia cartagena",
-            "para cartagena",
-            "a cartagena",
-            "hasta cartagena",
-            "destino cartagena"
+            "bucaramanga",
+            "de bucaramanga",
+            "desde bucaramanga",
+            "origen bucaramanga",
+            "saliendo de bucaramanga",
+            "saliendo desde bucaramanga"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Barranquilla-BAQ",
+          "value": "from_cali",
           "synonyms": [
-            "hacia barranquilla",
-            "para barranquilla",
-            "a barranquilla",
-            "hasta barranquilla",
-            "destino barranquilla"
+            "cali",
+            "de cali",
+            "desde cali",
+            "origen cali",
+            "saliendo de cali",
+            "saliendo desde cali"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Leticia-LET",
+          "value": "from_cucuta",
           "synonyms": [
-            "hacia leticia",
-            "para leticia",
-            "a leticia",
-            "hasta leticia",
-            "destino leticia"
+            "cucuta",
+            "de cucuta",
+            "desde cucuta",
+            "origen cucuta",
+            "saliendo de cucuta",
+            "saliendo desde cucuta"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Bucaramanga-BGA",
+          "value": "from_leticia",
           "synonyms": [
-            "hacia bucaramanga",
-            "para bucaramanga",
-            "a bucaramanga",
-            "hasta bucaramanga",
-            "destino bucaramanga"
+            "de leticia",
+            "desde leticia",
+            "leticia",
+            "origen leticia",
+            "saliendo de leticia",
+            "saliendo desde leticia"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Cali-CLO",
+          "value": "from_medellin",
           "synonyms": [
-            "hacia cali",
-            "para cali",
-            "a cali",
-            "hasta cali",
-            "destino cali"
+            "de jose maria cordova",
+            "de medellin",
+            "desde jose maria cordova",
+            "desde medellin",
+            "jose maria cordova",
+            "medellin",
+            "origen jose maria cordova",
+            "origen medellin",
+            "saliendo de jose maria cordova",
+            "saliendo de medellin",
+            "saliendo desde jose maria cordova",
+            "saliendo desde medellin"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Medellín-MDE",
+          "value": "from_monteria",
           "synonyms": [
-            "hacia rionegro",
-            "para rionegro",
-            "a rionegro",
-            "para jose maria cordova",
-            "al jose maria cordova",
-            "hacia medellin",
-            "para medellin",
-            "a medellin",
-            "hasta medellin",
-            "hasta jose maria cordova",
-            "destino medellin",
-            "destino jose maria cordova"
+            "de monteria",
+            "desde monteria",
+            "monteria",
+            "origen monteria",
+            "saliendo de monteria",
+            "saliendo desde monteria"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Montería-MTR",
+          "value": "from_pereira",
           "synonyms": [
-            "hacia monteria",
-            "para monteria",
-            "a monteria",
-            "hasta monteria",
-            "destino monteria"
+            "de pereira",
+            "desde pereira",
+            "origen pereira",
+            "pereira",
+            "saliendo de pereira",
+            "saliendo desde pereira"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Riohacha-RCH",
+          "value": "from_riohacha",
           "synonyms": [
-            "hacia riohacha",
-            "para riohacha",
-            "a riohacha",
-            "hasta riohacha",
-            "destino riohacha"
+            "de riohacha",
+            "desde riohacha",
+            "origen riohacha",
+            "riohacha",
+            "saliendo de riohacha",
+            "saliendo desde riohacha"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1San Andrés-ADZ",
+          "value": "from_san andres",
           "synonyms": [
-            "hacia san andres",
-            "para san andres",
-            "a san andres",
-            "hasta san andres",
-            "destino san andres"
+            "de san andres",
+            "desde san andres",
+            "origen san andres",
+            "saliendo de san andres",
+            "saliendo desde san andres",
+            "san andres"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Valledupar-VUP",
+          "value": "from_santa marta",
           "synonyms": [
-            "hacia valledupar",
-            "para valledupar",
-            "a valledupar",
-            "hasta valledupar",
-            "destino valledupar"
+            "de santa marta",
+            "desde santa marta",
+            "origen santa marta",
+            "saliendo de santa marta",
+            "saliendo desde santa marta",
+            "santa marta"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Yopal-EYP",
+          "value": "from_valledupar",
           "synonyms": [
-            "hacia yopal",
-            "para yopal",
-            "a yopal",
-            "hasta yopal",
-            "destino yopal"
+            "desde valledupar",
+            "de valledupar",
+            "origen valledupar",
+            "saliendo desde valledupar",
+            "saliendo de valledupar",
+            "valledupar"
           ]
         },
         {
           "type": "synonyms",
-          "value": "1Santa Marta-SMR",
+          "value": "from_yopal",
           "synonyms": [
-            "hacia santa marta",
-            "para santa marta",
-            "a santa marta",
-            "hasta santa marta",
-            "destino santa marta"
+            "desde yopal",
+            "de yopal",
+            "origen yopal",
+            "saliendo desde yopal",
+            "saliendo de yopal",
+            "yopal"
           ]
         }
       ]
@@ -458,245 +585,110 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "22 de febrero",
+          "value": "22-02",
           "synonyms": [
-            "@sys-date",
             "22/02",
-            "22-02",
-            "22 febrero"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "22 febrero",
-          "synonyms": [
-            "@sys-date",
-            "22/02",
-            "22-02",
-            "22 de febrero"
+            "22 de febrero",
+            "22 febrero",
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
           "value": "22/02",
           "synonyms": [
-            "@sys-date",
             "22-02",
             "22 de febrero",
-            "22 febrero"
+            "22 febrero",
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
-          "value": "22-02",
+          "value": "22 de febrero",
           "synonyms": [
-            "@sys-date",
+            "22-02",
+            "22/02",
+            "22 febrero",
+            "@sys-date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22 febrero",
+          "synonyms": [
+            "22-02",
             "22/02",
             "22 de febrero",
-            "22 febrero"
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
           "value": "@sys-date",
           "synonyms": [
-            "@sys-date",
-            "22 de febrero",
-            "22/02",
             "22-02",
-            "22 febrero"
+            "22/02",
+            "22 de febrero",
+            "22 febrero",
+            "@sys-date"
           ]
         }
       ],
       "fuzzy_match": true
     },
     {
-      "entity": "ciudad_origen",
+      "entity": "fecha_vuelta",
       "values": [
         {
           "type": "synonyms",
-          "value": "2Yopal-EYP",
+          "value": "22-02",
           "synonyms": [
-            "saliendo desde yopal",
-            "saliendo de yopal",
-            "desde yopal",
-            "de yopal",
-            "origen yopal",
-            "yopal"
+            "22/02",
+            "22 de febrero",
+            "22 febrero",
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
-          "value": "2Valledupar-VUP",
+          "value": "22/02",
           "synonyms": [
-            "saliendo desde valledupar",
-            "saliendo de valledupar",
-            "desde valledupar",
-            "de valledupar",
-            "origen valledupar",
-            "valledupar"
+            "22-02",
+            "22 de febrero",
+            "22 febrero",
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
-          "value": "2Medellín-MDE",
+          "value": "22 de febrero",
           "synonyms": [
-            "saliendo desde jose maria cordova",
-            "saliendo de jose maria cordova",
-            "desde jose maria cordova",
-            "de jose maria cordova",
-            "saliendo desde medellin",
-            "saliendo de medellin",
-            "desde medellin",
-            "de medellin",
-            "origen medellin",
-            "origen jose maria cordova",
-            "medellin",
-            "jose maria cordova"
+            "22-02",
+            "22/02",
+            "22 febrero",
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
-          "value": "2Pereira-PEI",
+          "value": "22 febrero",
           "synonyms": [
-            "saliendo desde pereira",
-            "saliendo de pereira",
-            "desde pereira",
-            "de pereira",
-            "origen pereira",
-            "pereira"
+            "22-02",
+            "22/02",
+            "22 de febrero",
+            "@sys-date"
           ]
         },
         {
           "type": "synonyms",
-          "value": "2Riohacha-RCH",
+          "value": "@sys-date",
           "synonyms": [
-            "saliendo desde riohacha",
-            "saliendo de riohacha",
-            "desde riohacha",
-            "de riohacha",
-            "origen riohacha",
-            "riohacha"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Santa Marta-SMR",
-          "synonyms": [
-            "saliendo desde santa marta",
-            "saliendo de santa marta",
-            "desde santa marta",
-            "de santa marta",
-            "origen santa marta",
-            "santa marta"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Bogotá-BOG",
-          "synonyms": [
-            "saliendo desde bogota",
-            "saliendo de bogota",
-            "desde bogota",
-            "de bogota",
-            "origen bogota",
-            "bogota"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Cartagena-CTG",
-          "synonyms": [
-            "saliendo desde cartagena",
-            "saliendo de cartagena",
-            "desde cartagena",
-            "de cartagena",
-            "origen cartagena",
-            "cartagena"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Barranquilla-BAQ",
-          "synonyms": [
-            "saliendo desde barranquilla",
-            "saliendo de barranquilla",
-            "desde barranquilla",
-            "de barranquilla",
-            "origen barranquilla",
-            "barranquilla"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Bucaramanga-BGA",
-          "synonyms": [
-            "saliendo desde bucaramanga",
-            "saliendo de bucaramanga",
-            "desde bucaramanga",
-            "de bucaramanga",
-            "origen bucaramanga",
-            "bucaramanga"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2San Andrés-ADZ",
-          "synonyms": [
-            "saliendo desde san andres",
-            "saliendo de san andres",
-            "desde san andres",
-            "de san andres",
-            "origen san andres",
-            "san andres"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Cúcuta-CUC",
-          "synonyms": [
-            "saliendo desde cucuta",
-            "saliendo de cucuta",
-            "desde cucuta",
-            "de cucuta",
-            "origen cucuta",
-            "cucuta"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Cali-CLO",
-          "synonyms": [
-            "saliendo desde cali",
-            "saliendo de cali",
-            "desde cali",
-            "de cali",
-            "origen cali",
-            "cali"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Montería-MTR",
-          "synonyms": [
-            "saliendo desde monteria",
-            "saliendo de monteria",
-            "desde monteria",
-            "de monteria",
-            "origen monteria",
-            "monteria"
-          ]
-        },
-        {
-          "type": "synonyms",
-          "value": "2Leticia-LET",
-          "synonyms": [
-            "saliendo desde leticia",
-            "saliendo de leticia",
-            "desde leticia",
-            "de leticia",
-            "origen leticia",
-            "leticia"
+            "22-02",
+            "22/02",
+            "22 de febrero",
+            "22 febrero",
+            "@sys-date"
           ]
         }
       ]
@@ -706,89 +698,82 @@
       "values": [
         {
           "type": "patterns",
-          "value": "email",
+          "value": "celular",
           "patterns": [
-            "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b"
+            "(\\d{3})-(\\d{3})-(\\d{4})"
           ]
         },
         {
           "type": "patterns",
-          "value": "celular",
+          "value": "email",
           "patterns": [
-            "(\\d{3})-(\\d{3})-(\\d{4})"
+            "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b"
           ]
         }
       ],
       "fuzzy_match": true
     },
     {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
       "entity": "sys-number",
       "values": []
     },
     {
-      "entity": "sys-date",
+      "entity": "sys-time",
       "values": []
     }
   ],
-  "language": "es",
   "metadata": {
     "api_version": {
-      "major_version": "v1",
-      "minor_version": "2018-09-20"
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
     }
   },
-  "skill_id": "55551e45-c3c8-4a11-95ce-045691d427f1",
-  "description": "",
   "dialog_nodes": [
     {
-      "type": "response_condition",
+      "type": "standard",
+      "title": "Empezar",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "Los sigo"
+                "text": "Hola, ¿a dónde quieres viajar?"
+              },
+              {
+                "text": "Hola, ¿cómo puedo ayudarte el día de hoy?"
+              },
+              {
+                "text": "Hola, ¿desde dónde quieres viajar?"
               }
             ],
             "response_type": "text",
-            "selection_policy": "sequential"
+            "selection_policy": "random"
           }
         ]
       },
-      "parent": "node_4_1564588309740",
-      "context": {
-        "preciovivo": "<? $myresult.id.Itineraries[0].PricingOptions[0].Price ?>"
-      },
-      "disabled": true,
       "metadata": {},
-      "dialog_node": "node_4_1565067857239",
-      "previous_sibling": "node_5_1565070709776"
+      "conditions": "welcome",
+      "digress_in": "not_available",
+      "dialog_node": "Bienvenido",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_4_1559851667127"
     },
     {
       "type": "standard",
+      "title": "No entendi",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "El menor precio es de \\$ <? $preciovivo + ($pasajeros*10000) ?> pesos, vuelo directo saliendo a las $horaida. "
+                "text": "No te he entendido. Intenta reformular tu búsqueda."
               },
               {
-                "text": "Precio no incluye equipaje de bodega, solo equipaje de mano."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "multiline"
-          },
-          {
-            "time": 2000,
-            "typing": true,
-            "response_type": "pause"
-          },
-          {
-            "values": [
-              {
-                "text": "¿Deseas hacer la reserva?"
+                "text": "¿Podrías decirlo con otras palabras? No te he entendido."
               }
             ],
             "response_type": "text",
@@ -796,173 +781,14 @@
           }
         ]
       },
-      "parent": "node_4_1564588309740",
-      "context": {
-        "horaida": "<? $fechahoraida.substring($fechahoraida.length()-4, $fechahoraida.length()) ?>"
-      },
-      "metadata": {
-        "_customization": {
-          "mcr": false
-        }
-      },
-      "conditions": "true",
-      "dialog_node": "node_5_1565070709776",
-      "digress_out": "allow_all"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Escribe la fecha de tu viaje incluyendo el mes.",
-            "Escribe la fecha de tu viaje con día y mes."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_8_1558395900296",
-      "context": {
-        "contador3": "<? context['contador3'] + 1 ?>"
-      },
       "metadata": {},
-      "conditions": "true",
-      "event_name": "nomatch",
-      "dialog_node": "handler_20_1558396736821",
-      "previous_sibling": "handler_34_1563396506920"
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_1_1562292438920"
     },
     {
       "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Disculpa, solo podemos cotizar vuelos para fechas **ANTES** del 31 de enero de 2020. Para fechas posteriores, debemos ver la disponibilidad en las aerolíneas.",
-            "No podemos cotizar para fechas **DESPUES** del 31 de enero de 2020. Para fechas posteriores debemos ver la disponibilidad en las aerolíneas."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_8_1558395900296",
-      "metadata": {},
-      "next_step": {
-        "behavior": "reprompt"
-      },
-      "conditions": "$fechaida.after(\"2020-01-31\")",
-      "event_name": "filled",
-      "dialog_node": "handler_14_1563320405661",
-      "previous_sibling": "handler_19_1558396736821"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "La fecha de vuelta es antes que la fecha de ida. Escribe las fecha de ida y de vuelta, de nuevo.",
-            "Hay algo errado con las fechas. La fecha de vuelta es antes que la fecha de ida. Escríbelas de nuevo."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_8_1558395900296",
-      "metadata": {},
-      "next_step": {
-        "behavior": "reprompt"
-      },
-      "conditions": "$fechaida > $fechavuelta && $fechavuelta != \"0\"",
-      "event_name": "filled",
-      "dialog_node": "handler_1_1565047286268",
-      "previous_sibling": "handler_14_1563320405661"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Voy a tomar la fecha de **hoy** para hacer la búsqueda, no reconozco la fecha que quieres viajar.",
-            "No entiendo la fecha que quieres viajar, voy a tomar la fecha de **hoy** para buscar el precio del pasaje."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_8_1558395900296",
-      "context": {
-        "fechaida": "today()",
-        "fechavuelta": 0
-      },
-      "metadata": {},
-      "next_step": {
-        "behavior": "skip_slot"
-      },
-      "conditions": "$contador3 > 1",
-      "event_name": "nomatch",
-      "dialog_node": "handler_34_1563396506920",
-      "previous_sibling": "handler_1_1565047286268"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_8_1558395900296",
-      "context": {
-        "fechas": "@sys-date.values",
-        "fechaida": "<? $fechas.append('0').get(0) ?>",
-        "fechavuelta": "<? $fechas.append('0').get(1).before($fechaida) ? $fechas.append('0').get(1).plusDays(7) : $fechas.append('0').get(1) ?>",
-        "ciudadorigen": "<? $ciudadorigen.substring(1, $ciudadorigen.length()) ?>",
-        "ciudaddestino": "<? $ciudaddestino.substring(1, $ciudaddestino.length()) ?>"
-      },
-      "metadata": {},
-      "conditions": "@sys-date.values",
-      "event_name": "input",
-      "dialog_node": "handler_9_1558395900296",
-      "previous_sibling": "handler_10_1558395900296"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "La ciudad de destino y la ciudad de origen son iguales. Reiniciemos la búsqueda.",
-            "Tengo que reiniciar la búsqueda. La ciudad de destino y la ciudad de origen son la misma."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_8_1558395900296",
-      "context": {
-        "fechas": null,
-        "fechaida": null,
-        "pasajeros": null,
-        "fechavuelta": null,
-        "ciudadorigen": null,
-        "ciudaddestino": null
-      },
-      "metadata": {},
-      "conditions": "$ciudaddestino==$ciudadorigen",
-      "event_name": "filled",
-      "dialog_node": "handler_19_1563505689546",
-      "previous_sibling": "handler_9_1558395900296"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Tu fecha de salida es anterior al día de hoy. No podemos realizar la búsqueda.",
-            "No se puede realizar la búsqueda, tu fecha de salida es anterior al día de hoy."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_8_1558395900296",
-      "metadata": {},
-      "next_step": {
-        "behavior": "reprompt"
-      },
-      "conditions": "$fechaida.before(today())",
-      "event_name": "filled",
-      "dialog_node": "handler_19_1558396736821",
-      "previous_sibling": "handler_19_1563505689546"
-    },
-    {
-      "type": "event_handler",
+      "title": "handler_10_1558395900296",
       "output": {
         "text": "¿Cuándo viajarías? Especifica día y mes. Si es solo ida, escribe solo **una** fecha. Si es ida y vuelta escribe **dos** fechas."
       },
@@ -972,122 +798,117 @@
       "dialog_node": "handler_10_1558395900296"
     },
     {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1557972849749",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "variable": "$temporal1",
-      "dialog_node": "slot_1_1559842481639",
-      "previous_sibling": "slot_8_1558395900296"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1557972849749",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "variable": "$ciudaddestino",
-      "dialog_node": "slot_3_1558112944835",
-      "previous_sibling": "node_3_1564576922288"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1557972849749",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "variable": "$fechas",
-      "dialog_node": "slot_8_1558395900296",
-      "previous_sibling": "slot_1_1558393541779"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1557972849749",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "variable": "$ciudadorigen",
-      "dialog_node": "slot_1_1558393541779",
-      "previous_sibling": "slot_3_1558112944835"
-    },
-    {
-      "type": "response_condition",
+      "type": "event_handler",
+      "title": "handler_10_1562948121374",
       "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Gracias por interactuar conmigo. Siempre atento a cualquier duda adicional que tengas."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "parent": "node_1_1557972849749",
-      "metadata": {},
-      "conditions": "has_skipped_slots",
-      "dialog_node": "node_15_1562962315792",
-      "previous_sibling": "slot_7_1562948113992"
-    },
-    {
-      "type": "slot",
-      "output": {},
-      "parent": "node_1_1557972849749",
-      "metadata": {
-        "_customization": {
-          "mcr": true
+        "text": {
+          "values": [
+            "Listo, vamos otra vez.",
+            "Listo, reiniciando..."
+          ],
+          "selection_policy": "random"
         }
       },
-      "variable": "$temporal2",
-      "dialog_node": "slot_7_1562948113992",
-      "previous_sibling": "slot_1_1559842481639"
-    },
-    {
-      "type": "standard",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "De acuerdo, acabaremos aquí. No se realizará ninguna búsqueda. Hasta la próxima."
-              },
-              {
-                "text": "Listo, no seguiremos adelante. Hasta una próxima ocasión."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
+      "parent": "slot_7_1562948113992",
+      "context": {
+        "fechaida": null,
+        "pasajeros": null,
+        "fechavuelta": null,
+        "ciudadorigen": null,
+        "ciudaddestino": null
       },
-      "parent": "node_1_1557972849749",
       "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "body",
-        "dialog_node": "En otras cosas"
-      },
-      "conditions": "#cancelar",
-      "dialog_node": "node_3_1564576922288",
-      "previous_sibling": "handler_2_1558112944820"
+      "conditions": "#no",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1562948121374",
+      "previous_sibling": "handler_12_1562960880697"
     },
     {
       "type": "event_handler",
+      "title": "handler_10_1563387251770",
+      "output": {
+        "text": {
+          "values": [
+            "Necesito por lo menos un pasajero para hacer la búsqueda del precio.",
+            "No especificaste el número de pasajeros, necesito por lo menos uno."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_1_1559842481639",
+      "context": {
+        "contador4": "<? context['contador4'] + 1 ?>"
+      },
+      "metadata": {},
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_10_1563387251770",
+      "previous_sibling": "handler_36_1563397379473"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_11_1562948121374",
+      "output": {
+        "text": {
+          "values": [
+            "Por favor, responde **SI** para buscar el precio que deseas, o **NO** si deseas cambiar la información.",
+            "Por favor, si, si deseas buscar el precio de este vuelo escribe **SI**, sino escribe **NO**."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_7_1562948113992",
+      "context": {
+        "contador": "<? context['contador'] + 1 ?>"
+      },
+      "metadata": {},
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_11_1562948121374",
+      "previous_sibling": "handler_11_1562960667329"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_11_1562960667329",
+      "output": {
+        "text": {
+          "values": [
+            "Parece que tengo un problema para determinar tu respuesta. Haré la búsqueda con los datos mostrados.",
+            "Estoy un poco confuso con tu respuesta. Haré la búsqueda del precio del vuelo usando los datos que te mostré."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_7_1562948113992",
+      "metadata": {},
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "$contador > 1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_11_1562960667329",
+      "previous_sibling": "handler_10_1562948121374"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_12_1562960880697",
+      "output": {
+        "text": {
+          "values": [
+            "Listo, estamos buscando..."
+          ]
+        }
+      },
+      "parent": "slot_7_1562948113992",
+      "metadata": {},
+      "conditions": "#si",
+      "event_name": "filled",
+      "dialog_node": "handler_12_1562960880697",
+      "previous_sibling": "handler_8_1562948113992"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_13_1562962052827",
       "output": {
         "text": {
           "values": [
@@ -1112,105 +933,33 @@
       },
       "conditions": "#cancelar",
       "event_name": "generic",
-      "dialog_node": "handler_13_1562962052827",
-      "previous_sibling": "node_2_1564576536207"
+      "dialog_node": "handler_13_1562962052827"
     },
     {
       "type": "event_handler",
+      "title": "handler_14_1563320405661",
       "output": {
         "text": {
           "values": [
-            "Te puedo ayudar a buscar el precio para tu viaje. Por favor escribe ciudad de destino, ciudad de origen y fecha(s) del viaje.",
-            "Para buscar el precio necesito información sobre tu viaje."
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_1_1557972849749",
-      "metadata": {},
-      "event_name": "focus",
-      "dialog_node": "handler_2_1558112944820",
-      "previous_sibling": "handler_13_1562962052827"
-    },
-    {
-      "type": "standard",
-      "title": "Llamada a Luca Sky PrecioLive",
-      "output": {
-        "generic": [
-          {
-            "time": 7000,
-            "typing": true,
-            "response_type": "pause"
-          }
-        ]
-      },
-      "parent": "node_1_1557972849749",
-      "actions": [
-        {
-          "name": "/migutie@gmail.com_dev/actions/luca_sky_preciolive",
-          "type": "cloud_function",
-          "parameters": {
-            "ida": "$ida",
-            "origen": "$origen",
-            "vuelta": "$vuelta",
-            "destino": "$destino",
-            "personas": "$personas"
-          },
-          "credentials": "$private.my_credentials",
-          "result_variable": "$myresult"
-        }
-      ],
-      "context": {
-        "private": {
-          "my_credentials": {
-            "user": "f5314d31-3839-4edc-bcf6-61eae4f3ac3b",
-            "password": "b8XWfHls8uXchygR8C7bHNeENx7M0yTdZNG5Jmi205AgnrL8P64WyAzK7Z15T95X"
-          }
-        }
-      },
-      "metadata": {},
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "true",
-      "dialog_node": "node_2_1564576536207"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_1_1558393541779",
-      "context": {
-        "ciudadorigen": "@ciudad_origen"
-      },
-      "metadata": {},
-      "conditions": "@ciudad_origen",
-      "event_name": "input",
-      "dialog_node": "handler_2_1558393541779",
-      "previous_sibling": "handler_3_1558393541779"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Disculpa, no tengo vuelos saliendo de esa ciudad.",
-            "Disculpa, por el momento no vendo pasajes saliendo de esa ciudad."
+            "Disculpa, solo podemos cotizar vuelos para fechas **ANTES** del 31 de enero de 2020. Para fechas posteriores, debemos ver la disponibilidad en las aerolíneas.",
+            "No podemos cotizar para fechas **DESPUES** del 31 de enero de 2020. Para fechas posteriores debemos ver la disponibilidad en las aerolíneas."
           ],
           "selection_policy": "random"
         }
       },
-      "parent": "slot_1_1558393541779",
+      "parent": "slot_8_1558395900296",
       "metadata": {},
       "next_step": {
-        "behavior": "skip_all_slots"
+        "behavior": "reprompt"
       },
-      "conditions": "$contador2 > 1",
-      "event_name": "nomatch",
-      "dialog_node": "handler_23_1563395663940",
-      "previous_sibling": "handler_2_1558393541779"
+      "conditions": "$fechaida.after(\"2020-01-31\")",
+      "event_name": "filled",
+      "dialog_node": "handler_14_1563320405661",
+      "previous_sibling": "handler_19_1558396736821"
     },
     {
       "type": "event_handler",
+      "title": "handler_15_1558395923674",
       "output": {
         "text": {
           "values": [
@@ -1232,48 +981,7 @@
     },
     {
       "type": "event_handler",
-      "output": {
-        "text": "¿Desde cuál ciudad quieres viajar? Escribe, **origen** ciudad (por ejemplo: **origen** Bogotá)"
-      },
-      "parent": "slot_1_1558393541779",
-      "metadata": {},
-      "event_name": "focus",
-      "dialog_node": "handler_3_1558393541779"
-    },
-    {
-      "type": "frame",
-      "title": "Datos del Viaje",
-      "output": {},
-      "parent": "node_26_1563325906060",
-      "metadata": {
-        "fallback": "leave",
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "#viaje",
-      "dialog_node": "node_1_1557972849749",
-      "digress_out": "allow_all_never_return",
-      "digress_out_slots": "allow_returning"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_3_1558112944835",
-      "context": {
-        "ciudaddestino": "@ciudad_destino"
-      },
-      "metadata": {},
-      "conditions": "@ciudad_destino",
-      "event_name": "input",
-      "dialog_node": "handler_4_1558112944835",
-      "previous_sibling": "handler_5_1558112944835"
-    },
-    {
-      "type": "event_handler",
+      "title": "handler_16_1563394924636",
       "output": {
         "text": {
           "values": [
@@ -1295,156 +1003,141 @@
     },
     {
       "type": "event_handler",
+      "title": "handler_19_1558396736821",
       "output": {
         "text": {
           "values": [
-            "No reconozco la ciudad a la que quieres viajar o no dispongo de vuelos para esa ciudad. Prueba escribiendo **destino** ciudad (por ejemplo: **destino** Cartagena).",
-            "O no dispongo de vuelos para esa ciudad o no la reconozco. Prueba escribiendo **destino** ciudad (por ejemplo: **destino** Cartagena)."
+            "Tu fecha de salida es anterior al día de hoy. No podemos realizar la búsqueda.",
+            "No se puede realizar la búsqueda, tu fecha de salida es anterior al día de hoy."
           ],
           "selection_policy": "random"
         }
       },
-      "parent": "slot_3_1558112944835",
-      "context": {
-        "contador1": "<? context['contador1'] + 1 ?>"
-      },
-      "metadata": {},
-      "conditions": "true",
-      "event_name": "nomatch",
-      "dialog_node": "handler_7_1558395801740",
-      "previous_sibling": "handler_16_1563394924636"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": "¿A cuál ciudad quieres viajar? Escribe, **destino** ciudad (por ejemplo: **destino** Cartagena)"
-      },
-      "parent": "slot_3_1558112944835",
-      "metadata": {},
-      "event_name": "focus",
-      "dialog_node": "handler_5_1558112944835"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Perfecto, me demoro solo unos segundos para encontrar el menor precio.",
-            "Estoy buscando...",
-            "Solo me toma unos segundos encontrar el menor precio."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_7_1562948113992",
-      "context": {
-        "ida": "$fechaida",
-        "origen": "<? $ciudadorigen.substring($ciudadorigen.length()-3, $ciudadorigen.length()) ?>",
-        "vuelta": "<? $diavuelta == ', solo ida' ? '' : $fechavuelta ?>",
-        "destino": "<? $ciudaddestino.substring($ciudaddestino.length()-3, $ciudaddestino.length()) ?>",
-        "personas": "$pasajeros"
-      },
-      "metadata": {},
-      "conditions": "#si",
-      "event_name": "filled",
-      "dialog_node": "handler_12_1562960880697",
-      "previous_sibling": "handler_8_1562948113992"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Parece que tengo un problema para determinar tu respuesta. Haré la búsqueda con los datos mostrados.",
-            "Estoy un poco confuso con tu respuesta. Haré la búsqueda del precio del vuelo usando los datos que te mostré."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_7_1562948113992",
-      "metadata": {},
-      "next_step": {
-        "behavior": "skip_all_slots"
-      },
-      "conditions": "$contador > 1",
-      "event_name": "nomatch",
-      "dialog_node": "handler_11_1562960667329",
-      "previous_sibling": "handler_10_1562948121374"
-    },
-    {
-      "type": "event_handler",
-      "output": {
-        "text": {
-          "values": [
-            "Listo, vamos otra vez.",
-            "Listo, reiniciando..."
-          ],
-          "selection_policy": "random"
-        }
-      },
-      "parent": "slot_7_1562948113992",
-      "context": {
-        "fechaida": null,
-        "pasajeros": null,
-        "fechavuelta": null,
-        "ciudadorigen": null,
-        "ciudaddestino": null
-      },
+      "parent": "slot_8_1558395900296",
       "metadata": {},
       "next_step": {
         "behavior": "reprompt"
       },
-      "conditions": "#no",
+      "conditions": "$fechaida.before(today())",
       "event_name": "filled",
-      "dialog_node": "handler_10_1562948121374",
-      "previous_sibling": "handler_12_1562960880697"
+      "dialog_node": "handler_19_1558396736821",
+      "previous_sibling": "handler_9_1558395900296"
     },
     {
       "type": "event_handler",
-      "output": {},
-      "parent": "slot_7_1562948113992",
-      "context": {
-        "temporal2": "(#si || #no) && slot_in_focus"
-      },
-      "metadata": {},
-      "conditions": "(#si || #no) && slot_in_focus",
-      "event_name": "input",
-      "dialog_node": "handler_8_1562948113992",
-      "previous_sibling": "handler_9_1562948113992"
-    },
-    {
-      "type": "event_handler",
+      "title": "handler_20_1558396736821",
       "output": {
         "text": {
           "values": [
-            "Por favor, responde **SI** para buscar el precio que deseas, o **NO** si deseas cambiar la información.",
-            "Por favor, si, si deseas buscar el precio de este vuelo escribe **SI**, sino escribe **NO**."
+            "Escribe la fecha de tu viaje incluyendo el mes.",
+            "Escribe la fecha de tu viaje con día y mes."
           ],
           "selection_policy": "random"
         }
       },
-      "parent": "slot_7_1562948113992",
+      "parent": "slot_8_1558395900296",
       "context": {
-        "contador": "<? context['contador'] + 1 ?>"
+        "contador3": "<? context['contador3'] + 1 ?>"
       },
       "metadata": {},
       "conditions": "true",
       "event_name": "nomatch",
-      "dialog_node": "handler_11_1562948121374",
-      "previous_sibling": "handler_11_1562960667329"
+      "dialog_node": "handler_20_1558396736821",
+      "previous_sibling": "handler_34_1563396506920"
     },
     {
       "type": "event_handler",
+      "title": "handler_2_1558112944820",
       "output": {
-        "text": "¿Quieres viajar desde $ciudadorigen para $ciudaddestino, el $diaida$diavuelta, $pasajeros pasajero(s)? Por favor, confirmame si es así."
+        "text": {
+          "values": [
+            "Para poderte responder, necesito información sobre tu viaje. Por favor escribe ciudad de destino, ciudad de origen y fecha(s) del viaje."
+          ],
+          "selection_policy": "sequential"
+        }
       },
-      "parent": "slot_7_1562948113992",
+      "parent": "node_1_1557972849749",
       "metadata": {},
       "event_name": "focus",
-      "dialog_node": "handler_9_1562948113992"
+      "dialog_node": "handler_2_1558112944820",
+      "previous_sibling": "handler_13_1562962052827"
     },
     {
       "type": "event_handler",
+      "title": "handler_2_1558393541779",
+      "output": {},
+      "parent": "slot_1_1558393541779",
+      "context": {
+        "ciudadorigen": "@ciudad_origen"
+      },
+      "metadata": {},
+      "conditions": "@ciudad_origen",
+      "event_name": "input",
+      "dialog_node": "handler_2_1558393541779",
+      "previous_sibling": "handler_3_1558393541779"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_2_1559842481639",
+      "output": {},
+      "parent": "slot_1_1559842481639",
+      "context": {
+        "pasajeros": "@sys-number",
+        "temporal1": "(@sys-number || @sys-number:0) && slot_in_focus"
+      },
+      "metadata": {},
+      "conditions": "(@sys-number || @sys-number:0) && slot_in_focus",
+      "event_name": "input",
+      "dialog_node": "handler_2_1559842481639",
+      "previous_sibling": "handler_3_1559842481639"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_23_1563395663940",
+      "output": {
+        "text": {
+          "values": [
+            "Disculpa, no tengo vuelos saliendo de esa ciudad.",
+            "Disculpa, por el momento no vendo pasajes saliendo de esa ciudad."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_1_1558393541779",
+      "metadata": {},
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "$contador2 > 1",
+      "event_name": "nomatch",
+      "dialog_node": "handler_23_1563395663940",
+      "previous_sibling": "handler_2_1558393541779"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1558393541779",
+      "output": {
+        "text": "¿Desde cuál ciudad quieres viajar? Escribe, **origen** ciudad (por ejemplo: **origen** Bogotá)"
+      },
+      "parent": "slot_1_1558393541779",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_3_1558393541779"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1559842481639",
+      "output": {
+        "text": "¿Cuántas personas viajan? Específica solamente el número de personas mayores de 2 años. Los bebés viajan gratis."
+      },
+      "parent": "slot_1_1559842481639",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_3_1559842481639"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1562957539913",
       "output": {
         "text": {
           "values": [
@@ -1469,27 +1162,33 @@
     },
     {
       "type": "event_handler",
+      "title": "handler_34_1563396506920",
       "output": {
         "text": {
           "values": [
-            "Necesito por lo menos un pasajero para hacer la búsqueda del precio.",
-            "No especificaste el número de pasajeros, necesito por lo menos uno."
+            "Voy a tomar la fecha de **hoy** para hacer la búsqueda, no reconozco la fecha que quieres viajar.",
+            "No entiendo la fecha que quieres viajar, voy a tomar la fecha de **hoy** para buscar el precio del pasaje."
           ],
           "selection_policy": "random"
         }
       },
-      "parent": "slot_1_1559842481639",
+      "parent": "slot_8_1558395900296",
       "context": {
-        "contador4": "<? context['contador4'] + 1 ?>"
+        "fechaida": "today()",
+        "fechavuelta": 0
       },
       "metadata": {},
-      "conditions": "true",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "$contador3 > 1",
       "event_name": "nomatch",
-      "dialog_node": "handler_10_1563387251770",
-      "previous_sibling": "handler_36_1563397379473"
+      "dialog_node": "handler_34_1563396506920",
+      "previous_sibling": "handler_14_1563320405661"
     },
     {
       "type": "event_handler",
+      "title": "handler_36_1563397379473",
       "output": {
         "text": {
           "values": [
@@ -1514,6 +1213,32 @@
     },
     {
       "type": "event_handler",
+      "title": "handler_4_1558112944835",
+      "output": {},
+      "parent": "slot_3_1558112944835",
+      "context": {
+        "ciudaddestino": "@ciudad_destino"
+      },
+      "metadata": {},
+      "conditions": "@ciudad_destino",
+      "event_name": "input",
+      "dialog_node": "handler_4_1558112944835",
+      "previous_sibling": "handler_5_1558112944835"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_5_1558112944835",
+      "output": {
+        "text": "¿A cuál ciudad quieres viajar? Escribe, **destino** ciudad (por ejemplo: **destino** Cartagena)"
+      },
+      "parent": "slot_3_1558112944835",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_5_1558112944835"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_5_1562957763479",
       "output": {
         "text": {
           "values": [
@@ -1536,69 +1261,82 @@
     },
     {
       "type": "event_handler",
-      "output": {},
-      "parent": "slot_1_1559842481639",
+      "title": "handler_7_1558395801740",
+      "output": {
+        "text": {
+          "values": [
+            "No reconozco la ciudad a la que quieres viajar o no dispongo de vuelos para esa ciudad. Prueba escribiendo **destino** ciudad (por ejemplo: **destino** Cartagena).",
+            "O no dispongo de vuelos para esa ciudad o no la reconozco. Prueba escribiendo **destino** ciudad (por ejemplo: **destino** Cartagena)."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_3_1558112944835",
       "context": {
-        "diaida": "<? $fechaida.reformatDateTime('EEEE, d') + ' de ' + $fechaida.reformatDateTime('MMMM') ?>",
-        "diavuelta": "<? $fechavuelta == '0' ? ', solo ida' : ' al ' + $fechavuelta.reformatDateTime('EEEE, d') + ' de ' + $fechavuelta.reformatDateTime('MMMM') ?>",
-        "pasajeros": "@sys-number",
-        "temporal1": "(@sys-number || @sys-number:0) && slot_in_focus"
+        "contador1": "<? context['contador1'] + 1 ?>"
       },
       "metadata": {},
-      "conditions": "(@sys-number || @sys-number:0) && slot_in_focus",
-      "event_name": "input",
-      "dialog_node": "handler_2_1559842481639",
-      "previous_sibling": "handler_3_1559842481639"
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1558395801740",
+      "previous_sibling": "handler_16_1563394924636"
     },
     {
       "type": "event_handler",
-      "output": {
-        "text": "¿Cuántas personas viajan? Específica solamente el número de personas mayores de 2 años. Los bebés viajan gratis."
+      "title": "handler_8_1562948113992",
+      "output": {},
+      "parent": "slot_7_1562948113992",
+      "context": {
+        "temporal2": "(#si || #no) && slot_in_focus"
       },
-      "parent": "slot_1_1559842481639",
+      "metadata": {},
+      "conditions": "(#si || #no) && slot_in_focus",
+      "event_name": "input",
+      "dialog_node": "handler_8_1562948113992",
+      "previous_sibling": "handler_9_1562948113992"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_9_1558395900296",
+      "output": {},
+      "parent": "slot_8_1558395900296",
+      "context": {
+        "fechas": "@sys-date.values",
+        "fechaida": "<? $fechas.append('0').get(0) ?>",
+        "fechavuelta": "<? $fechas.append('0').get(1).before($fechaida) ? $fechas.append('0').get(1).plusDays(7) : $fechas.append('0').get(1) ?>"
+      },
+      "metadata": {},
+      "conditions": "@sys-date.values",
+      "event_name": "input",
+      "dialog_node": "handler_9_1558395900296",
+      "previous_sibling": "handler_10_1558395900296"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_9_1562948113992",
+      "output": {
+        "text": "¿Quieres viajar desde $ciudadorigen para $ciudaddestino, $fechaida - $fechavuelta? Por favor, confirmame si es así."
+      },
+      "parent": "slot_7_1562948113992",
       "metadata": {},
       "event_name": "focus",
-      "dialog_node": "handler_3_1559842481639"
+      "dialog_node": "handler_9_1562948113992"
     },
     {
-      "type": "standard",
-      "output": {
-        "generic": []
-      },
-      "parent": "node_2_1564576536207",
-      "context": {
-        "preciovivo": "<? $myresult.id.Itineraries[0].PricingOptions[0].Price ?>",
-        "fechahoraida": "<? $itinerariosplit[1] ?>",
-        "itinerariovivo": "<? $myresult.id.Itineraries[0].OutboundLegId ?>",
-        "itinerariosplit": "<? $itinerariovivo.split('-') ?>"
-      },
+      "type": "frame",
+      "title": "Datos del Viaje",
+      "output": {},
+      "parent": "node_26_1563325906060",
       "metadata": {
+        "fallback": "leave",
         "_customization": {
-          "mcr": false
+          "mcr": true
         }
       },
-      "next_step": {
-        "behavior": "skip_user_input"
-      },
-      "conditions": "$myresult.has('id') == true",
-      "dialog_node": "node_4_1564588309740",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_1_1565041778466"
-    },
-    {
-      "type": "standard",
-      "output": {
-        "generic": []
-      },
-      "parent": "node_2_1564576536207",
-      "metadata": {},
-      "next_step": {
-        "behavior": "jump_to",
-        "selector": "condition",
-        "dialog_node": "node_2_1564576536207"
-      },
-      "conditions": "$myresult.has('error') == true",
-      "dialog_node": "node_1_1565041778466"
+      "conditions": "#viaje",
+      "dialog_node": "node_1_1557972849749",
+      "digress_out": "allow_all_never_return",
+      "digress_out_slots": "allow_returning"
     },
     {
       "type": "response_condition",
@@ -1607,24 +1345,19 @@
           {
             "values": [
               {
-                "text": "El menor precio es de \\$ <?$preciovivo+10000?> pesos para el vuelo directo saliendo a las $fechahoraida. "
-              },
-              {
-                "text": "Precio no incluye equipaje de bodega, solo equipaje de mano."
+                "text": "$temporal2 Ida $fechaida, vuelta $fechavuelta. $pasajeros"
               }
             ],
             "response_type": "text",
-            "selection_policy": "multiline"
+            "selection_policy": "sequential"
           }
         ]
       },
-      "parent": "node_5_1565070709776",
-      "context": {
-        "horaida": "<? $fechahoraida.substring($fechahoraida.length()-4, $fechahoraida.length()) ?>"
-      },
-      "disabled": true,
+      "parent": "node_1_1557972849749",
       "metadata": {},
-      "dialog_node": "node_6_1565070919785"
+      "conditions": "#si",
+      "dialog_node": "node_1_1558112906522",
+      "previous_sibling": "node_15_1562962315792"
     },
     {
       "type": "standard",
@@ -1690,17 +1423,13 @@
       "previous_sibling": "node_26_1563325906060"
     },
     {
-      "type": "standard",
-      "title": "No entendi",
+      "type": "response_condition",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "LUCA es el primer bot con Inteligencia Artificial en Colombia que busca pasajes aéreos. Es un desarrollo de Experiencias Vuelos. "
-              },
-              {
-                "text": "Para más información ingresa a:"
+                "text": "Gracias por interactuar conmigo. Siempre atento a cualquier duda adicional que tengas."
               }
             ],
             "response_type": "text",
@@ -1708,10 +1437,11 @@
           }
         ]
       },
+      "parent": "node_1_1557972849749",
       "metadata": {},
-      "conditions": "anything_else",
-      "dialog_node": "En otras cosas",
-      "previous_sibling": "node_1_1562292438920"
+      "conditions": "has_skipped_slots",
+      "dialog_node": "node_15_1562962315792",
+      "previous_sibling": "slot_7_1562948113992"
     },
     {
       "type": "standard",
@@ -1726,19 +1456,18 @@
         ]
       },
       "context": {
-        "fechas": null,
         "contador": 0,
         "fechaida": null,
+        "temporal": null,
         "contador1": 0,
         "contador2": 0,
         "contador3": 0,
         "contador4": 0,
         "pasajeros": null,
-        "temporal1": null,
-        "temporal2": null,
         "fechavuelta": null,
         "ciudadorigen": null,
-        "ciudaddestino": null
+        "ciudaddestino": null,
+        "confirmarbusqueda": null
       },
       "metadata": {},
       "next_step": {
@@ -1749,35 +1478,6 @@
       "dialog_node": "node_26_1563325906060",
       "digress_out": "allow_all",
       "previous_sibling": "Bienvenido"
-    },
-    {
-      "type": "standard",
-      "title": "Empezar",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Hola, ¿a dónde quieres viajar?"
-              },
-              {
-                "text": "Hola, ¿cómo puedo ayudarte el día de hoy?"
-              },
-              {
-                "text": "Hola, ¿desde dónde quieres viajar?"
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "random"
-          }
-        ]
-      },
-      "metadata": {},
-      "conditions": "welcome",
-      "digress_in": "not_available",
-      "dialog_node": "Bienvenido",
-      "digress_out": "allow_all",
-      "previous_sibling": "node_4_1559851667127"
     },
     {
       "type": "standard",
@@ -1795,13 +1495,79 @@
       "digress_in": "not_available",
       "dialog_node": "node_4_1559851667127",
       "digress_out": "allow_all"
+    },
+    {
+      "type": "slot",
+      "title": "slot_1_1558393541779",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$ciudadorigen",
+      "dialog_node": "slot_1_1558393541779",
+      "previous_sibling": "slot_3_1558112944835"
+    },
+    {
+      "type": "slot",
+      "title": "slot_1_1559842481639",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$temporal1",
+      "dialog_node": "slot_1_1559842481639",
+      "previous_sibling": "slot_8_1558395900296"
+    },
+    {
+      "type": "slot",
+      "title": "slot_3_1558112944835",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$ciudaddestino",
+      "dialog_node": "slot_3_1558112944835",
+      "previous_sibling": "handler_2_1558112944820"
+    },
+    {
+      "type": "slot",
+      "title": "slot_7_1562948113992",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$temporal2",
+      "dialog_node": "slot_7_1562948113992",
+      "previous_sibling": "slot_1_1559842481639"
+    },
+    {
+      "type": "slot",
+      "title": "slot_8_1558395900296",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "variable": "$fechas",
+      "dialog_node": "slot_8_1558395900296",
+      "previous_sibling": "slot_1_1558393541779"
     }
   ],
-  "workspace_id": "fe9961a9-9e8c-4bd7-baea-d22d57a4f165",
   "counterexamples": [
-    {
-      "text": "1"
-    },
     {
       "text": "desde medellin"
     },
@@ -1818,5 +1584,7 @@
     }
   },
   "learning_opt_out": false,
-  "status": "Available"
+  "name": "Experiencias-001 copy",
+  "language": "es",
+  "description": ""
 }
