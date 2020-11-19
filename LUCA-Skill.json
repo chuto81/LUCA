@@ -1,0 +1,943 @@
+{
+  "name": "Experiencias Conocimiento-001",
+  "intents": [
+    {
+      "intent": "viaje",
+      "examples": [
+        {
+          "text": "cuanto vale @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "precio @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "de @ciudad_origen a @ciudad_destino?"
+        },
+        {
+          "text": "cuanto @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "cuanto cuesta @ciudad_origen @ciudad_destino?"
+        },
+        {
+          "text": "cuanto cuesta @ciudad_origen @ciudad_destino para mañana?"
+        },
+        {
+          "text": "tienen pasajes @ciudad_origen-@ciudad_destino-@ciudad_origen?"
+        },
+        {
+          "text": "cuanto vale el viaje @ciudad_destino?"
+        },
+        {
+          "text": "quiero viajar @ciudad_origen @ciudad_destino"
+        },
+        {
+          "text": "quiero viajar @ciudad_destino @ciudad_origen"
+        },
+        {
+          "text": "cuanto cuesta viajar @ciudad_destino?"
+        },
+        {
+          "text": "cuanto @ciudad_destino @ciudad_origen?"
+        },
+        {
+          "text": "cuanto vale @ciudad_destino el @sys-date?"
+        },
+        {
+          "text": "precio @ciudad_destino viajando el @sys-date?"
+        },
+        {
+          "text": "quiero viajar"
+        },
+        {
+          "text": "cuanto cuesta?"
+        }
+      ],
+      "description": "Define el origen, el destino y las fechas para viajar"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "si_no",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "no",
+            "nolas",
+            "claro que no",
+            "no estoy seguro",
+            "not"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "si",
+          "synonyms": [
+            "si",
+            "sizas",
+            "claro que si",
+            "por supuesto",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "fecha_vuelta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "22 febrero",
+          "synonyms": [
+            "22 de febrero",
+            "22-02",
+            "22/02",
+            "@sys-date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22 de febrero",
+          "synonyms": [
+            "22 febrero",
+            "22-02",
+            "22/02",
+            "@sys-date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "@sys-date",
+          "synonyms": [
+            "22 febrero",
+            "22-02",
+            "22/02",
+            "22 de febrero",
+            "@sys-date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22-02",
+          "synonyms": [
+            "22 febrero",
+            "22 de febrero",
+            "22/02",
+            "@sys-date"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22/02",
+          "synonyms": [
+            "22 febrero",
+            "22 de febrero",
+            "22-02",
+            "@sys-date"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "ciudad_destino",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "to_medellin",
+          "synonyms": [
+            "hacia rionegro",
+            "para rionegro",
+            "a rionegro",
+            "para jose maria cordova",
+            "al jose maria cordova",
+            "para enrique olaya herrera",
+            "al enrique olaya herrera",
+            "hacia medellin",
+            "para medellin",
+            "a medellin",
+            "hasta medellin",
+            "hasta enrique olaya herrera",
+            "hasta jose maria cordova",
+            "destino medellin",
+            "destino enrique olaya herrera",
+            "destino jose maria cordova"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_barranquilla",
+          "synonyms": [
+            "hacia barranquilla",
+            "para barranquilla",
+            "a barranquilla",
+            "hasta barranquilla",
+            "destino barranquilla"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_bogota",
+          "synonyms": [
+            "hacia el dorado",
+            "para el dorado",
+            "al dorado",
+            "hacia bogota",
+            "para bogota",
+            "a bogota",
+            "hasta bogota",
+            "destino bogota"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_bucaramanga",
+          "synonyms": [
+            "hacia bucaramanga",
+            "para bucaramanga",
+            "a bucaramanga",
+            "hasta bucaramanga",
+            "destino bucaramanga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_cali",
+          "synonyms": [
+            "hacia cali",
+            "para cali",
+            "a cali",
+            "hasta cali",
+            "destino cali"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_cartagena",
+          "synonyms": [
+            "hacia cartagena",
+            "para cartagena",
+            "a cartagena",
+            "hasta cartagena",
+            "destino cartagena"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_cucuta",
+          "synonyms": [
+            "hacia cucuta",
+            "para cucuta",
+            "a cucuta",
+            "hasta cucuta",
+            "destino cucuta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_leticia",
+          "synonyms": [
+            "hacia leticia",
+            "para leticia",
+            "a leticia",
+            "hasta leticia",
+            "destino leticia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_madrid",
+          "synonyms": [
+            "hacia madrid",
+            "para madrid",
+            "a madrid",
+            "hasta madrid",
+            "destino madrid"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_pereira",
+          "synonyms": [
+            "hacia pereira",
+            "para pereira",
+            "a pereira",
+            "hasta pereira",
+            "destino pereira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_monteria",
+          "synonyms": [
+            "hacia monteria",
+            "para monteria",
+            "a monteria",
+            "hasta monteria",
+            "destino monteria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_riohacha",
+          "synonyms": [
+            "hacia riohacha",
+            "para riohacha",
+            "a riohacha",
+            "hasta riohacha",
+            "destino riohacha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_san andres",
+          "synonyms": [
+            "hacia san andres",
+            "para san andres",
+            "a san andres",
+            "hasta san andres",
+            "destino san andres"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_santa marta",
+          "synonyms": [
+            "hacia santa marta",
+            "para santa marta",
+            "a santa marta",
+            "hasta santa marta",
+            "destino santa marta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_valledupar",
+          "synonyms": [
+            "hacia valledupar",
+            "para valledupar",
+            "a valledupar",
+            "hasta valledupar",
+            "destino valledupar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "to_yopal",
+          "synonyms": [
+            "hacia yopal",
+            "para yopal",
+            "a yopal",
+            "hasta yopal",
+            "destino yopal"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "fecha_ida",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "22 febrero",
+          "synonyms": [
+            "@sys-date",
+            "22/02",
+            "22-02",
+            "22 de febrero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22/02",
+          "synonyms": [
+            "@sys-date",
+            "22-02",
+            "22 de febrero",
+            "22 febrero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22-02",
+          "synonyms": [
+            "@sys-date",
+            "22/02",
+            "22 de febrero",
+            "22 febrero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "@sys-date",
+          "synonyms": [
+            "@sys-date",
+            "22 de febrero",
+            "22/02",
+            "22-02",
+            "22 febrero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "22 de febrero",
+          "synonyms": [
+            "@sys-date",
+            "22/02",
+            "22-02",
+            "22 febrero"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ciudad_origen",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "from_bucaramanga",
+          "synonyms": [
+            "saliendo desde bucaramanga",
+            "saliendo de bucaramanga",
+            "desde bucaramanga",
+            "de bucaramanga",
+            "origen bucaramanga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_cartagena",
+          "synonyms": [
+            "saliendo desde cartagena",
+            "saliendo de cartagena",
+            "desde cartagena",
+            "de cartagena",
+            "origen cartagena"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_cucuta",
+          "synonyms": [
+            "saliendo desde cucuta",
+            "saliendo de cucuta",
+            "desde cucuta",
+            "de cucuta",
+            "origen cucuta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_bogota",
+          "synonyms": [
+            "saliendo desde bogota",
+            "saliendo de bogota",
+            "desde bogota",
+            "de bogota",
+            "origen bogota"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_cali",
+          "synonyms": [
+            "saliendo desde cali",
+            "saliendo de cali",
+            "desde cali",
+            "de cali",
+            "origen cali"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_leticia",
+          "synonyms": [
+            "saliendo desde leticia",
+            "saliendo de leticia",
+            "desde leticia",
+            "de leticia",
+            "origen leticia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_madrid",
+          "synonyms": [
+            "saliendo desde madrid",
+            "saliendo de madrid",
+            "desde madrid",
+            "de madrid",
+            "origen madrid"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_medellin",
+          "synonyms": [
+            "saliendo desde jose maria cordova",
+            "saliendo de jose maria cordova",
+            "desde jose maria cordova",
+            "de jose maria cordova",
+            "saliendo desde enrique olaya herrera",
+            "saliendo de enrique olaya herrera",
+            "desde enrique olaya herrera",
+            "de enrique olaya herrera",
+            "saliendo desde medellin",
+            "saliendo de medellin",
+            "desde medellin",
+            "de medellin",
+            "origen medellin",
+            "origen enrique olaya herrera",
+            "origen jose maria cordova"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_monteria",
+          "synonyms": [
+            "saliendo desde monteria",
+            "saliendo de monteria",
+            "desde monteria",
+            "de monteria",
+            "origen monteria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_pereira",
+          "synonyms": [
+            "saliendo desde pereira",
+            "saliendo de pereira",
+            "desde pereira",
+            "de pereira",
+            "origen pereira"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_riohacha",
+          "synonyms": [
+            "saliendo desde riohacha",
+            "saliendo de riohacha",
+            "desde riohacha",
+            "de riohacha",
+            "origen riohacha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_san andres",
+          "synonyms": [
+            "saliendo desde san andres",
+            "saliendo de san andres",
+            "desde san andres",
+            "de san andres",
+            "origen san andres"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_santa marta",
+          "synonyms": [
+            "saliendo desde santa marta",
+            "saliendo de santa marta",
+            "desde santa marta",
+            "de santa marta",
+            "origen santa marta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_valledupar",
+          "synonyms": [
+            "saliendo desde valledupar",
+            "saliendo de valledupar",
+            "desde valledupar",
+            "de valledupar",
+            "origen valledupar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_yopal",
+          "synonyms": [
+            "saliendo desde yopal",
+            "saliendo de yopal",
+            "desde yopal",
+            "de yopal",
+            "origen yopal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "from_barranquilla",
+          "synonyms": [
+            "saliendo desde barranquilla",
+            "saliendo de barranquilla",
+            "desde barranquilla",
+            "de barranquilla",
+            "origen barranquilla"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    }
+  ],
+  "language": "es",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1558395900296",
+      "context": {
+        "fechas": "@sys-date.values",
+        "fechaida": "<? $fechas.append('0').get(0) ?>",
+        "fechavuelta": "<? $fechas.append('0').get(1).before($fechaida) ? $fechas.append('0').get(1).plusDays(7) : $fechas.append('0').get(1) ?>",
+        "viajetiempo": "<? $fechaida.before(today()) ?>"
+      },
+      "metadata": {},
+      "conditions": "@sys-date.values",
+      "event_name": "input",
+      "dialog_node": "handler_9_1558395900296",
+      "previous_sibling": "handler_10_1558395900296"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Disculpa, escribe la fecha de tu viaje incluyendo el mes."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1558395900296",
+      "metadata": {},
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_20_1558396736821",
+      "previous_sibling": "handler_9_1558395900296"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1558395900296",
+      "metadata": {},
+      "event_name": "filled",
+      "dialog_node": "handler_19_1558396736821",
+      "previous_sibling": "handler_20_1558396736821"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "¿Cuándo viajarías?"
+      },
+      "parent": "slot_8_1558395900296",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_10_1558395900296"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$ciudad_destino es $ciudad_origen"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1557972849749",
+      "context": {
+        "fecha_ida": "@sys-date",
+        "fecha_vuelta": "@sys-date",
+        "ciudad_origen": "@ciudad_origen",
+        "ciudad_destino": "@ciudad_destino"
+      },
+      "disabled": true,
+      "metadata": {},
+      "conditions": "@ciudad_destino != 'bogota'",
+      "dialog_node": "node_1_1558112906522",
+      "previous_sibling": "slot_8_1558395900296"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Para poderte responder, necesito alguna información sobre tu viaje. Por favor escribe ciudad de destino, ciudad de origen y fecha(s) del viaje."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1557972849749",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_2_1558112944820",
+      "previous_sibling": "node_14_1558634091207"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {}
+      },
+      "variable": "$fechas",
+      "dialog_node": "slot_8_1558395900296",
+      "previous_sibling": "slot_1_1558393541779"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {},
+      "variable": "$ciudadorigen",
+      "dialog_node": "slot_1_1558393541779",
+      "previous_sibling": "slot_3_1558112944835"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1557972849749",
+      "metadata": {
+        "_customization": {}
+      },
+      "variable": "$ciudaddestino",
+      "dialog_node": "slot_3_1558112944835",
+      "previous_sibling": "handler_2_1558112944820"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nos encantaría ofrecer viajes en el tiempo, pero tal vez el año pasado ya estén listos. La fecha de ida de tu viaje es anterior al día de hoy."
+              },
+              {
+                "text": "La fecha de tu viaje es anterior a hoy, no ofrecemos (aun) viajes en el tiempo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1557972849749",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1557972849749"
+      },
+      "conditions": "$viajetiempo: true",
+      "dialog_node": "node_14_1558634091207"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1558393541779",
+      "context": {
+        "ciudadorigen": "@ciudad_origen"
+      },
+      "metadata": {},
+      "conditions": "@ciudad_origen",
+      "event_name": "input",
+      "dialog_node": "handler_2_1558393541779",
+      "previous_sibling": "handler_3_1558393541779"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Disculpa, no reconozco la ciudad desde la cual viajas."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1558393541779",
+      "metadata": {},
+      "event_name": "nomatch",
+      "dialog_node": "handler_15_1558395923674",
+      "previous_sibling": "handler_2_1558393541779"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "¿Desde cuál ciudad quieres viajar?"
+      },
+      "parent": "slot_1_1558393541779",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_3_1558393541779"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1558112944835",
+      "context": {
+        "ciudaddestino": "@ciudad_destino"
+      },
+      "metadata": {},
+      "conditions": "@ciudad_destino",
+      "event_name": "input",
+      "dialog_node": "handler_4_1558112944835",
+      "previous_sibling": "handler_5_1558112944835"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Disculpa, no reconozco la ciudad a la que quieres viajar."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1558112944835",
+      "metadata": {},
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_7_1558395801740",
+      "previous_sibling": "handler_4_1558112944835"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "¿A cuál ciudad quieres viajar?"
+      },
+      "parent": "slot_3_1558112944835",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_5_1558112944835"
+    },
+    {
+      "type": "standard",
+      "title": "No entendi",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No le he entendido. Intenta reformular tu búsqueda."
+              },
+              {
+                "text": "¿Podrías decirlo con otras palabras? No te he entendido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_1_1557972849749"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ida $fechaida, vuelta $fechavuelta. $viajetiempo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#viaje",
+      "digress_in": "not_available",
+      "dialog_node": "node_1_1557972849749",
+      "digress_out": "allow_all_never_return",
+      "previous_sibling": "Bienvenido",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Empezar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola, ¿cómo puedo ayudarte el día de hoy?"
+              },
+              {
+                "text": "Hola, ¿a dónde quieres viajar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Bienvenido"
+    }
+  ],
+  "workspace_id": "fe9961a9-9e8c-4bd7-baea-d22d57a4f165",
+  "counterexamples": [
+    {
+      "text": "desde cartagena"
+    },
+    {
+      "text": "desde medellin"
+    },
+    {
+      "text": "desde yopal"
+    }
+  ],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
